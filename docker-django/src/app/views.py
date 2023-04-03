@@ -6,7 +6,7 @@ from .mig.models import init_user
 
 
 def index(request):
-    return HttpResponse("Test message")
+    return HttpResponse("Валери ППИДОР")
 
 
 def login(request):

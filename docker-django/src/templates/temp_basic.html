@@ -1,11 +1,40 @@
 <html>
 <head>
     <title>This is basic template file </title>
+    <style>
+        .mainWrapper {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-content: space-around;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+
+        .formWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    </style>
 </head>
 <body>
-<center>{% block content %}</center>
+<div class="mainWrapper">
+    {% block content %}
 
-{% endblock %}
+    {% endblock %}
+</div>
+
 <br><br>
 </body>
 </html>

@@ -1,11 +1,23 @@
 {% extends 'temp_basic.html' %}
 
 {% block content %}
-{{msg}}
-<form  action='added_user' method=POST>
-    {% csrf_token %}
-name :<input type=text name=name><br>
-password :<input type=text name=password><br>
-<input type=submit value=Submit>
-</form>
+<div class="formWrapper">
+    <div class="titleWrapper">
+        {{msg}}
+    </div>
+    <form action='added_user' method=POST>
+        {% csrf_token %}
+        <div class="nameWrapper">
+            name :<input type=text name=name>
+
+        </div>
+        <div class="passwordWrapper">
+            password :<input type=text name=password>
+        </div>
+
+       <div class="submitWrapper">
+        <input type=submit value=Submit>
+       </div>
+    </form>
+</div>
 {% endblock %}

@@ -8,3 +8,4 @@ class init_user(models.Model):
 
     class Meta:
         db_table = 'db_user'
+
